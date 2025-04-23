@@ -13,7 +13,7 @@
     "build:bp": "turbo run build --filter=broadcaster-portal",
     "build:only-changed": "turbo build --filter=[HEAD^1]",
     "test:unit": "turbo run test:unit",
-    "test:unit:changed": "turbo run test:unit --filter=[HEAD^1]"
+    "test:unit:changed": "turbo run test:unit --filter=[HEAD]"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
