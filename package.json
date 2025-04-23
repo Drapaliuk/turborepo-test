@@ -12,10 +12,10 @@
     "build:aim": "turbo run build --filter=aim",
     "build:bp": "turbo run build --filter=broadcaster-portal",
     "build:unstaged": "turbo build --filter=[HEAD^1]",
-    "build:changed": "turbo build --filter=[HEAD^1]",
+    "build:changed": "turbo build --filter=[main...dev]",
     "test:unit": "turbo run test:unit",
     "test:unit:unstaged": "turbo run test:unit --filter=[HEAD]",
-    "test:unit:changed": "turbo run test:unit --filter=[HEAD]"
+    "test:unit:changed": "turbo run test:unit --filter=[main...dev]"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
