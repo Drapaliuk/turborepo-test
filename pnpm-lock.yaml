@@ -239,6 +239,10 @@ importers:
         version: 8.29.0(eslint@9.24.0)(typescript@5.8.2)
 
   packages/math:
+    dependencies:
+      vitest:
+        specifier: ^3.1.1
+        version: 3.1.2(@types/node@22.14.0)(jsdom@26.1.0)
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
@@ -248,6 +252,10 @@ importers:
         version: 5.8.3
 
   packages/strings:
+    dependencies:
+      vitest:
+        specifier: ^3.1.1
+        version: 3.1.2(@types/node@22.14.0)(jsdom@26.1.0)
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
