@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "default": {
+      "rootDirectory": "apps/aim",
+      "buildCommand": "pnpm build",
+      "installCommand": "pnpm install",
+      "outputDirectory": "dist"
+    }
+  }
+}
