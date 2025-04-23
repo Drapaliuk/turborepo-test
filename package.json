@@ -8,7 +8,9 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
     "build:string": "turbo run build --filter=@repo/strings",
-    "build:math": "turbo run build --filter=@repo/math"
+    "build:math": "turbo run build --filter=@repo/math",
+    "build:aim": "turbo run build --filter=aim",
+    "build:bp": "turbo run build --filter=broadcaster-portal"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
