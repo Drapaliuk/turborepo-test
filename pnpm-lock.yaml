@@ -20,6 +20,12 @@ importers:
 
   apps/aim:
     dependencies:
+      '@repo/math':
+        specifier: workspace:*
+        version: link:../../packages/math
+      '@repo/strings':
+        specifier: workspace:*
+        version: link:../../packages/strings
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.3)
@@ -69,6 +75,12 @@ importers:
 
   apps/broadcaster-portal:
     dependencies:
+      '@repo/math':
+        specifier: workspace:*
+        version: link:../../packages/math
+      '@repo/strings':
+        specifier: workspace:*
+        version: link:../../packages/strings
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.3)
