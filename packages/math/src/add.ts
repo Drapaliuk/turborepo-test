@@ -1,4 +1,4 @@
 export const add = (a: number, b: number) => {
-    console.log('ssssss')
+    console.log('sssssss')
     return a + b
 };
