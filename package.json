@@ -14,9 +14,9 @@
     "build:unstaged": "turbo build --filter=[HEAD^1]",
     "build:changed": "turbo build --filter=[main...dev]",
     "test:unit": "turbo run test:unit",
-    "test:unit:unstaged": "turbo run test:unit --filter=[HEAD]... --no-cache",
+    "test:unit:unstaged": "turbo run test:unit --filter=[HEAD]...",
     "test:unit:changed": "turbo run test:unit --filter=[main...dev]",
-    "test:unit:math": "turbo run  test:unit --filter=@repo/math...",
+    "test:unit:math": "turbo run  test:unit --filter=...@repo/math",
     "changed": "turbo run echo --filter=[HEAD]... --dry"
   },
   "devDependencies": {

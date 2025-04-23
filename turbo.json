@@ -18,6 +18,7 @@
       "persistent": true
     },
     "test:unit": {
+      "cache": false,
       "dependsOn": ["^test:unit"],
       "inputs": ["$TURBO_DEFAULT$", "vitest.config.*", "**/*.test.*"],
       "outputs": []
