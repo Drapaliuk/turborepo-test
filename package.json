@@ -15,7 +15,9 @@
     "build:changed": "turbo build --filter=[main...dev]",
     "test:unit": "turbo run test:unit",
     "test:unit:unstaged": "turbo run test:unit --filter=[HEAD]",
-    "test:unit:changed": "turbo run test:unit --filter=[main...dev]"
+    "test:unit:changed": "turbo run test:unit --filter=[main...dev]",
+    "changed": "turbo run echo --filter=[HEAD]... --dry"
+
   },
   "devDependencies": {
     "prettier": "^3.5.3",
