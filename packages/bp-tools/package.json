@@ -5,7 +5,7 @@
     "dev": "tsc --watch",
     "build": "tsc",
     "test:unit": "vitest",
-    "clean": "rm -rf ./dist"
+    "clean": "rm -rf dist"
   },
   "exports": {
     "./bp-tools": {
