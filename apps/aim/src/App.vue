@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { add } from '@repo/math/add';
+import { aimTool } from '@repo/aim-tools';
+
 import { capitalize } from '@repo/strings/capitalize';
+
 </script>
 
 <template>

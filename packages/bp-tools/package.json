@@ -1,5 +1,5 @@
 {
-  "name": "@repo/math",
+  "name": "@repo/bp-tools",
   "type": "module",
   "scripts": {
     "dev": "tsc --watch",
@@ -7,9 +7,9 @@
     "test:unit": "vitest"
   },
   "exports": {
-    "./add": {
-      "types": "./src/add.ts",
-      "default": "./dist/add.js"
+    "./bpTool": {
+      "types": "./src/bpTool.ts",
+      "default": "./dist/bpTool.js"
     }
   },
   "devDependencies": {
