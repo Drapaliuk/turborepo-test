@@ -209,6 +209,22 @@ importers:
         specifier: latest
         version: 5.8.3
 
+  packages/packages-tools:
+    dependencies:
+      '@repo/strings':
+        specifier: workspace:*
+        version: link:../strings
+      vitest:
+        specifier: ^3.1.1
+        version: 3.1.2(@types/node@22.14.0)(jsdom@26.1.0)
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      typescript:
+        specifier: latest
+        version: 5.8.3
+
   packages/strings:
     dependencies:
       vitest:
