@@ -7,9 +7,9 @@
     "test:unit": "vitest"
   },
   "exports": {
-    "./bpTool": {
-      "types": "./src/bpTool.ts",
-      "default": "./dist/bpTool.js"
+    "./aim-tools": {
+      "types": "./src/aim-tools.ts",
+      "default": "./dist/aim-tools.js"
     }
   },
   "devDependencies": {

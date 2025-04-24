@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
-describe('Math', () => {
-    it('Test add', async () => {
+describe('___BP__TOOLS___', () => {
+    it('Test bpTool', async () => {
         expect(1).equal(1)
     })
 });
