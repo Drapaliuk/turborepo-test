@@ -11,8 +11,8 @@
     "test:e2e": "playwright test",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "vercel:ignore": "exit 0"
-
+    "vercel:ignore": "exit 0",
+    "rmdist": "rm -rf ./dist"
   },
   "dependencies": {
     "@repo/math": "workspace:*",

@@ -10,7 +10,9 @@
     "test:unit": "vitest",
     "test:e2e": "playwright test",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build"
+    "type-check": "vue-tsc --build",
+    "vercel:ignore": "exit 1"
+
   },
   "dependencies": {
     "@repo/math": "workspace:*",

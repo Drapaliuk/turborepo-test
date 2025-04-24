@@ -11,7 +11,7 @@
     "build:math": "turbo run build --filter=@repo/math",
     "build:aim": "turbo run build --filter=aim",
     "build:bp": "turbo run build --filter=broadcaster-portal",
-    "build:unstaged": "turbo build --filter=[HEAD^1]",
+    "build:unstaged": "turbo build --filter=...[HEAD]",
     "build:changed": "turbo build --filter=[main...dev]",
     "test:unit": "turbo run test:unit",
     "test:unit:unstaged": "turbo run test:unit --filter=[HEAD]...",
