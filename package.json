@@ -17,7 +17,8 @@
     "test:unit:unstaged": "turbo run test:unit --filter=[HEAD]...",
     "test:unit:changed": "turbo run test:unit --filter=[main...dev]",
     "test:unit:math": "turbo run  test:unit --filter=...@repo/math",
-    "changed": "turbo run echo --filter=[HEAD]... --dry"
+    "changed": "turbo run echo --filter=[HEAD]... --dry",
+    "clean": "turbo run clean"
   },
   "devDependencies": {
     "prettier": "^3.5.3",

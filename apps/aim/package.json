@@ -12,7 +12,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "vercel:ignore": "exit 0",
-    "rmdist": "rm -rf ./dist"
+    "clean": "rm -rf ./dist"
   },
   "dependencies": {
     "@repo/math": "workspace:*",
