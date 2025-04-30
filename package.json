@@ -3,7 +3,6 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "build:dry": "turbo run build --filter=[HEAD]... --dry=json",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -14,6 +13,7 @@
     "build:bp": "turbo run build --filter=broadcaster-portal",
     "build:unstaged": "turbo build --filter=...[HEAD]",
     "build:changed": "turbo build --filter=[main...dev]",
+    "build:dry": "turbo run build --filter=[HEAD]... --dry=json",
     "test:unit": "turbo run test:unit",
     "test:unit:unstaged": "turbo run test:unit --filter=...[HEAD]",
     "test:unit:changed": "turbo run test:unit --filter=[main...dev]",
