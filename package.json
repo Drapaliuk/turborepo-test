@@ -18,9 +18,11 @@
     "test:unit:unstaged": "turbo run test:unit --filter=...[HEAD]",
     "test:unit:changed": "turbo run test:unit --filter=[main...dev]",
     "test:unit:math": "turbo run  test:unit --filter=...@repo/math",
-    "changed": "turbo run echo --filter=[HEAD]... --dry",
     "clean": "turbo run clean --force",
-    "affected": "turbo ls --affected --output=json"
+    "affected": "turbo ls --affected --output=json",
+    "changed": "turbo ls --filter=[HEAD]... --output=json"
+
+
   },
   "devDependencies": {
     "prettier": "^3.5.3",
