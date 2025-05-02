@@ -11,7 +11,6 @@ import { aimTool } from '@repo/aim-tools/aim-tools';
   <div>Check math 1+1: {{ add(1, 1) }}</div>
   <div>{{ aimTool() }}</div>
   <div>New line in AIM</div>
-  
 </template>
 
 <style scoped></style>
