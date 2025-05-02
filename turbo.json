@@ -21,6 +21,9 @@
     "clean": {
       "dependsOn": ["^clean"]
     },
+    "vercel:ignore": {
+      "dependsOn": ["^vercel:ignore"]
+    },
     "test:unit": {
       "cache": false,
       "dependsOn": ["^test:unit"],

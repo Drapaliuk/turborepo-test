@@ -21,8 +21,9 @@
     "clean": "turbo run clean --force",
     "affected": "turbo ls --affected --output=json",
     "changed": "turbo ls --filter=[HEAD]... --output=json",
-    "l": "turbo ls --filter=[main...HEAD]"
-
+    "changed:stream": "turbo ls --filter=[HEAD]...",
+    "l": "turbo ls --filter=[main...HEAD]",
+    "vercel:ignore": "turbo run vercel:ignore"
 
   },
   "devDependencies": {
