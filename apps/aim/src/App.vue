@@ -13,6 +13,7 @@ import { aimTool } from '@repo/aim-tools/aim-tools';
 
 
   
+  
 </template>
 
 <style scoped></style>
