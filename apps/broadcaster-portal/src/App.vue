@@ -10,6 +10,7 @@ import { capitalize } from '@repo/strings/capitalize';
   <h1>{{ capitalize('Broadcaster portal Project') }}</h1>
   <div>Check math 1+1: {{ add(1, 1) }}</div>
   <div>{{ bpTool() }}</div>
+  
 </template>
 
 <style scoped></style>
