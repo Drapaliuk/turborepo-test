@@ -1,9 +1,9 @@
 #!/bin/sh -e
 
-# COMMIT_BRANCH="$VERCEL_GIT_COMMIT_REF"
-# TARGET_BRANCH="$VERCEL_TARGET_ENV"
-COMMIT_BRANCH="HEAD"
-TARGET_BRANCH="main"
+COMMIT_BRANCH="$VERCEL_GIT_COMMIT_REF"
+TARGET_BRANCH="$VERCEL_TARGET_ENV"
+# COMMIT_BRANCH="HEAD"
+# TARGET_BRANCH="main"
 
 if turbo ls --filter=...[$TARGET_BRANCH...$COMMIT_BRANCH]...| grep -qE '(^|/)aim$|apps/aim'; then
   echo "✅ Build can proceed. AIM or apps/aim was affected"
