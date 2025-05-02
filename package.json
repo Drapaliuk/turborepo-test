@@ -20,7 +20,8 @@
     "test:unit:math": "turbo run  test:unit --filter=...@repo/math",
     "clean": "turbo run clean --force",
     "affected": "turbo ls --affected --output=json",
-    "changed": "turbo ls --filter=[HEAD]... --output=json"
+    "changed": "turbo ls --filter=[HEAD]... --output=json",
+    "l": "turbo ls --filter=[main...HEAD]"
 
 
   },
