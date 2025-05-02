@@ -1,6 +1,7 @@
 #!/bin/sh -e
 
-BRANCH="$VERCEL_GIT_COMMIT_REF"
+COMMiT_BRANCH="$VERCEL_GIT_COMMIT_REF"
+TARGET_BRANCH="$VERCEL_TARGET_ENV"
 
 if turbo ls --filter="[HEAD]..." | grep -qE '(^|/)aim$|apps/aim'; then
   echo "✅ aim or apps/aim was affected"
