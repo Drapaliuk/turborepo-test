@@ -6,9 +6,9 @@ COMMIT_BRANCH="HEAD"
 TARGET_BRANCH="main"
 
 if turbo ls --filter=[$TARGET_BRANCH...$COMMIT_BRANCH]...| grep -qE '(^|/)broadcaster-portal$|apps/broadcaster-portal'; then
-  echo "✅ Build can proceed. AIM or apps/aim was affected"
+  echo "✅ Build can proceed. broadcaster-portal was affected"
   exit 1
 else
-  echo "🚫 Build cancelled. No changes in aim or apps/aim"
+  echo "🚫 Build cancelled. No changes in broadcaster-portal"
   exit 0
 fi
