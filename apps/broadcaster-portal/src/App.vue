@@ -3,6 +3,7 @@ import { bpTool } from '@repo/bp-tools/bp-tools';
 import { add } from '@repo/math/add';
 import { capitalize } from '@repo/strings/capitalize';
 
+
 </script>
 
 <template>
