@@ -1,3 +1,3 @@
 export const aimTool = () => {
-    return 'AIM tool resulwts!'
+    return 'AIM tool resulwt!'
 };
