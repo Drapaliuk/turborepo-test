@@ -1,3 +1,3 @@
 export const bpTool = () => {
-    return 'Broadcaster portal tool result!'
+    return 'Broadcaster portal tool result'
 };
