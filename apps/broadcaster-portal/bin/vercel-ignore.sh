@@ -10,6 +10,9 @@ TARGET_BRANCH="main"
 echo "Commit branch:  $COMMIT_BRANCH"
 echo "Target branch:  $TARGET_BRANCH"
 
+echo "🔁 Fetching $TARGET_BRANCH..."
+git fetch origin $TARGET_BRANCH
+
 if turbo ls --filter=...[$TARGET_BRANCH...$COMMIT_BRANCH]| grep -qE '(^|/)broadcaster-portal$|apps/broadcaster-portal'; then
   echo "✅ Build can proceed. broadcaster-portal was affected"
   exit 1
