@@ -1,9 +1,12 @@
 #!/bin/sh -e
 
 COMMIT_BRANCH="$VERCEL_GIT_COMMIT_REF"
-TARGET_BRANCH="$VERCEL_TARGET_ENV"
+# TARGET_BRANCH="$VERCEL_TARGET_ENV"
+TARGET_BRANCH="main"
 # COMMIT_BRANCH="HEAD"
 # TARGET_BRANCH="main"
+
+
 
 if turbo ls --filter=...[$TARGET_BRANCH...$COMMIT_BRANCH]| grep -qE '(^|/)broadcaster-portal$|apps/broadcaster-portal'; then
   echo "✅ Build can proceed. broadcaster-portal was affected"
