@@ -17,6 +17,8 @@ echo $REPO_URL
 
 git branch
 
+ls -a
+
 if turbo ls --filter=...[$TARGET_BRANCH...$COMMIT_BRANCH]| grep -qE '(^|/)aim$|apps/aim'; then
   echo "✅ Build can proceed. AIM or apps/aim was affected"
   exit 1
