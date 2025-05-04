@@ -12,6 +12,9 @@ echo "Target branch:  $TARGET_BRANCH"
 
 echo "🔁 Fetching $TARGET_BRANCH..."
 
+REPO_URL="https://github.com/$VERCEL_GIT_REPO_OWNER/$VERCEL_GIT_REPO_SLUG.git"
+echo $REPO_URL
+
 git branch
 
 if turbo ls --filter=...[$TARGET_BRANCH...$COMMIT_BRANCH]| grep -qE '(^|/)aim$|apps/aim'; then
