@@ -14,7 +14,7 @@ echo "🔁 Fetching $TARGET_BRANCH..."
 
 git remote -v
 git branch
-git log --oneline
+git log -1 master
 
 if turbo ls --filter=...[$TARGET_BRANCH...$COMMIT_BRANCH]| grep -qE '(^|/)aim$|apps/aim'; then
   echo "✅ Build can proceed. AIM or apps/aim was affected"
