@@ -12,9 +12,8 @@ echo "Target branch:  $TARGET_BRANCH"
 
 echo "🔁 Fetching $TARGET_BRANCH..."
 
-git remote -v
+git fetch origin main:refs/remotes/origin/main
 git branch
-git log -1 master
 
 if turbo ls --filter=...[$TARGET_BRANCH...$COMMIT_BRANCH]| grep -qE '(^|/)aim$|apps/aim'; then
   echo "✅ Build can proceed. AIM or apps/aim was affected"
