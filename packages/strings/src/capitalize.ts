@@ -1,1 +1,0 @@
-export const capitalize = (value: string) => value.toUpperCase();
