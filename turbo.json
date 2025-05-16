@@ -1,12 +1,11 @@
 {
-  "$schema": "https://turbo.build/schema.json",
+  "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
-  "globalDependencies": [".npmrc"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**"]
+      "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {
       "dependsOn": ["^lint"]
@@ -17,19 +16,6 @@
     "dev": {
       "cache": false,
       "persistent": true
-    },
-    "clean": {
-      "dependsOn": ["^clean"]
-    },
-    "vercel:ignore": {
-      "dependsOn": ["^vercel:ignore"]
-    },
-    "test:unit": {
-      "cache": false,
-      "dependsOn": ["^test:unit"],
-      "inputs": ["$TURBO_DEFAULT$", "vitest.config.*", "**/*.test.*"],
-      "outputs": []
     }
   }
 }
-
