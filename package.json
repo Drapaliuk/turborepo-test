@@ -8,7 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
     "affected": "turbo ls --affected --output=json",
-    "changed": "turbo ls --filter=[HEAD]... --output=json",
+    "changed": "turbo ls --filter=...[HEAD] --output=json",
     "changed:stream": "turbo ls --filter=[HEAD]..."
   },
   "devDependencies": {
