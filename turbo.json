@@ -29,7 +29,12 @@
       "dependsOn": ["^test:unit"],
       "inputs": ["$TURBO_DEFAULT$", "vitest.config.*", "**/*.test.*"],
       "outputs": []
+    },
+
+    "test-deps": {
+      "cache": false
     }
+
   }
 }
 

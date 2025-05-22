@@ -12,7 +12,8 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "vercel:ignore": "./bin/vercel-ignore.sh",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "test-deps": "echo Task test-deps in broadcster"
   },
   "dependencies": {
     "@repo/math": "workspace:*",
