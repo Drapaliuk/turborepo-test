@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # ... other steps
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
