@@ -14,7 +14,10 @@ jobs:
 
       - name: Install pnpm
         run: npm install -g pnpm
-        
+
+      - name: Install deps
+        run: pnpm install
+
       - name: Publish Project 1 to Chromatic
         uses: chromaui/action@latest
         with:
