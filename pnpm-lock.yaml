@@ -23,6 +23,9 @@ importers:
       '@repo/aim-tools':
         specifier: workspace:*
         version: link:../../packages/aim-tools
+      '@repo/components':
+        specifier: workspace:^
+        version: link:../../packages/components
       '@repo/math':
         specifier: workspace:*
         version: link:../../packages/math
@@ -111,6 +114,9 @@ importers:
 
   apps/broadcaster-portal:
     dependencies:
+      '@repo/aim-tools':
+        specifier: workspace:^
+        version: link:../../packages/aim-tools
       '@repo/bp-tools':
         specifier: workspace:*
         version: link:../../packages/bp-tools
@@ -225,6 +231,8 @@ importers:
       typescript:
         specifier: latest
         version: 5.8.3
+
+  packages/components: {}
 
   packages/eslint-config:
     devDependencies:

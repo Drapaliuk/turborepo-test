@@ -19,6 +19,7 @@
     "chromatic": "npx chromatic --project-token=chpt_9e3e30ce3a19813"
   },
   "dependencies": {
+    "@repo/aim-tools": "workspace:^",
     "@repo/bp-tools": "workspace:*",
     "@repo/math": "workspace:*",
     "@repo/strings": "workspace:*",

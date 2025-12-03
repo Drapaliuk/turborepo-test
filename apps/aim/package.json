@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@repo/aim-tools": "workspace:*",
+    "@repo/components": "workspace:^",
     "@repo/math": "workspace:*",
     "@repo/strings": "workspace:*",
     "vue": "^3.5.13"
