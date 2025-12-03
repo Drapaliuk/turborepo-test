@@ -6,14 +6,15 @@ jobs:
   chromatic:
     runs-on: ubuntu-latest
     steps:
-      # ... other steps
-      - name: Install pnpm
-        run: npm install -g pnpm
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           submodules: recursive
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+        
       - name: Publish Project 1 to Chromatic
         uses: chromaui/action@latest
         with:
