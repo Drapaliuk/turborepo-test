@@ -19,5 +19,5 @@ jobs:
         uses: chromaui/action@latest
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN_2 }}
-          workingDir: packages/project_2
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_BP_TOKEN }}
+          workingDir: apps/broadcaster-portal
