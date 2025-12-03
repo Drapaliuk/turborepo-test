@@ -1,4 +1,4 @@
-name: "Chromatic"
+name: "aim-portal-chromatic"
 
 on: pull_request
 
