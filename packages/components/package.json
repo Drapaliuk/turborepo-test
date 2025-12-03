@@ -7,5 +7,11 @@
     "build": "echo 'Add build script here'",
     "test": "echo 'Add test script here'",
     "lint": "echo 'Add lint script here'"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.93.3"
   }
 }
