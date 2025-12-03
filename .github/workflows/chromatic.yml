@@ -13,7 +13,7 @@ jobs:
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_AIM_TOKEN }}
-          workingDir: packages/aim
+          workingDir: apps/aim
 
       # - name: Publish Project 2 to Chromatic
         uses: chromaui/action@latest
