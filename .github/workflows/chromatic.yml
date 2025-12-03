@@ -1,23 +1,20 @@
-name: "Chromatic"
-
-on: push
-
 jobs:
   chromatic:
     runs-on: ubuntu-latest
     steps:
       # ... other steps
 
-      - name: Publish AIM to Chromatic
+      - name: Publish Project 1 to Chromatic
         uses: chromaui/action@latest
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_AIM_TOKEN }}
           workingDir: apps/aim
 
-      # - name: Publish Project 2 to Chromatic
+      - name: Publish Project 2 to Chromatic
         uses: chromaui/action@latest
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_BP_TOKEN }}
           workingDir: apps/broadcaster-portal
+
