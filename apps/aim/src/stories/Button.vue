@@ -1,10 +1,13 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <div>
+    <tooltip />
+    <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  </div>
 </template>
 
 <script lang="ts" setup>
 import { computed } from 'vue';
-
+import Tooltip from '@repo/components/src/Tooltip.vue';
 import './button.css';
 
 const props = withDefaults(
