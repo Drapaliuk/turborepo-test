@@ -20,4 +20,9 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_BP_TOKEN }}
           workingDir: apps/broadcaster-portal
+      - name: Publish aim_portal to Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_AIM_TOKEN }}
+          workingDir: apps/aim
 
