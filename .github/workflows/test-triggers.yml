@@ -1,7 +1,7 @@
 name: "Test Triggers"
 
 on:
-  pull_request
+  push
 
 jobs:
   display-info:
