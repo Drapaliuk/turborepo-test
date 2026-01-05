@@ -1,7 +1,9 @@
 name: "Test Triggers"
 
 on:
-  push
+  push:
+    branches:
+      - 'main'
 
 jobs:
   display-info:
