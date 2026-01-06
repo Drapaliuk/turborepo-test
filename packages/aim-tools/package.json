@@ -1,6 +1,6 @@
 {
   "name": "@repo/aim-tools",
-  "type": "module",
+  "version": "1.0.0",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",

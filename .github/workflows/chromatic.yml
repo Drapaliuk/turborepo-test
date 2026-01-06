@@ -1,0 +1,29 @@
+name: "chromatic"
+
+on: pull_request
+
+jobs:
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+      - name: Install deps
+        run: pnpm install
+      - name: Publish broadcaster_portal to Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_BP_TOKEN }}
+          workingDir: apps/broadcaster-portal
+          onlyChanged: true
+      - name: Publish aim_portal to Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_AIM_TOKEN }}
+          workingDir: apps/aim
+          onlyChanged: true
+
