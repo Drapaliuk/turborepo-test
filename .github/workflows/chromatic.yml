@@ -14,6 +14,16 @@ jobs:
         uses: pnpm/action-setup@v4
       - name: Install deps
         run: pnpm install
+      - name: Show Current Date and Event
+        run: |
+          echo "Поточна дата: $(date)"
+          echo "Подія, що викликала запуск: ${{ github.event_name }}"
+          echo "Гілка (ref): ${{ github.ref }}"
+          echo "SHA коміту: ${{ github.sha }}"
+          echo "Chromatic recomendation коміту: ${{ github.event.pull_request.head.sha }}"
+          echo "Інформація про репозиторій: ${{ github.repository }}"
+          echo "Інформація про відправника: ${{ github.actor }}"
+          echo "Повний контекст події: ${{ toJson(github) }}"
       - name: Publish broadcaster_portal to Chromatic
         uses: chromaui/action@latest
         with:
