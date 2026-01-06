@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - main
-  
 jobs:
   chromatic:
     runs-on: ubuntu-latest
