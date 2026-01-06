@@ -2,6 +2,7 @@ name: "chromatic"
 
 on: pull_request
 
+
 jobs:
   chromatic:
     runs-on: ubuntu-latest
